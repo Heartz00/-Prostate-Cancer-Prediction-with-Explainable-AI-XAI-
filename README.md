@@ -2,14 +2,6 @@
 
 This repository contains the code for a project focused on enhancing prostate cancer prediction using Explainable AI (XAI). The project employs an interpretable Random Forest model and utilizes SHAP (Shapley Additive Explanations) and LIME (Local Interpretable Model-Agnostic Explanations) to provide transparent and actionable insights for clinical decision-making.
 
-## Table of Contents
-
-- [Project Overview](#project-overview)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Results and Discussion](#results-and-discussion)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 
@@ -33,43 +25,11 @@ To run this project locally, follow these steps:
     cd prostate-cancer-prediction-xai
     ```
 
-2. Create and activate a virtual environment (optional but recommended):
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
-    ```
-
-3. Install the required dependencies:
+2. Install the required dependencies:
     ```bash
     pip install -r requirements.txt
     ```
 
-## Usage
-
-1. **Train the Model**: 
-   Run the `train_model.py` script to train the Random Forest classifier using the prostate cancer dataset. This will also generate SHAP and LIME visualizations.
-
-    ```bash
-    python train_model.py
-    ```
-
-2. **Model Inference**: 
-   Once the model is trained, you can use it to make predictions on new data by running:
-   
-    ```bash
-    python predict.py --input_data path_to_input_data.csv
-    ```
-
-3. **View Interpretability Plots**: 
-   SHAP and LIME plots will be saved as PNG files, which visualize feature importance and model explanations.
-
-4. **Saving and Loading the Model**: 
-   The trained model is saved to a file using `joblib`. You can load it back with:
-   
-    ```python
-    import joblib
-    model = joblib.load('best_model.joblib')
-    ```
 
 ## Results and Discussion
 
